@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daftar Mobil - Sewa Mobil ABC</title>
+    <link rel="stylesheet" href="./css/daftar-mobil.css">
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>Sewa Mobil ABC</h1>
+            <nav>
+                <a href="index.html" class="active">Daftar Mobil</a>
+                <a href="./html/riwayat.html">Riwayat</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Daftar Mobil Tersedia</h2>
+            <div class="car-list">
+                <!-- Mobil 1 -->
+                <div class="car-card">
+                    <img src="./assets/toyota avanza.png" alt="Toyota Avanza">
+                    <div class="car-info">
+                        <h3>Toyota Avanza</h3>
+                        <p class="price">Rp 500.000 / hari</p>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" class="car-checkbox" data-id="1">
+                                Pilih Mobil
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="start-date-1">Tanggal Mulai Sewa:</label>
+                            <input type="date" id="start-date-1" class="start-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="duration-1">Durasi (hari):</label>
+                            <input type="number" id="duration-1" class="duration" min="1" value="1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobil 2 -->
+                <div class="car-card">
+                    <img src="./assets/Toyota Kijang Innova.png" alt="Toyota Kijang Innova">
+                    <div class="car-info">
+                        <h3>Toyota Kijang Innova</h3>
+                        <p class="price">Rp 700.000 / hari</p>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" class="car-checkbox" data-id="2">
+                                Pilih Mobil
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="start-date-2">Tanggal Mulai Sewa:</label>
+                            <input type="date" id="start-date-2" class="start-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="duration-2">Durasi (hari):</label>
+                            <input type="number" id="duration-2" class="duration" min="1" value="1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobil 3 -->
+                <div class="car-card">
+                    <img src="./assets/Honda HRV.png" alt="Honda HRV">
+                    <div class="car-info">
+                        <h3>Honda HRV</h3>
+                        <p class="price">Rp 600.000 / hari</p>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" class="car-checkbox" data-id="3">
+                                Pilih Mobil
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="start-date-3">Tanggal Mulai Sewa:</label>
+                            <input type="date" id="start-date-3" class="start-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="duration-3">Durasi (hari):</label>
+                            <input type="number" id="duration-3" class="duration" min="1" value="1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobil 4 -->
+                <div class="car-card">
+                    <img src="./assets/Daihatsu Sigra.png" alt="Daihatsu Sigra">
+                    <div class="car-info">
+                        <h3>Daihatsu Sigra</h3>
+                        <p class="price">Rp 450.000 / hari</p>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" class="car-checkbox" data-id="4">
+                                Pilih Mobil
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="start-date-4">Tanggal Mulai Sewa:</label>
+                            <input type="date" id="start-date-4" class="start-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="duration-4">Durasi (hari):</label>
+                            <input type="number" id="duration-4" class="duration" min="1" value="1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="next-btn" class="btn-primary">Lanjut ke Formulir</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/daftar-mobil.js"></script>
 </body>
 </html>

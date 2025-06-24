@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pelanggan - Sewa Mobil ABC</title>
+    <link rel="stylesheet" href="../css/formulir.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sewa Mobil ABC</h1>
+            <nav>
+                <a href="index.html">Daftar Mobil</a>
+                <a href="riwayat.html">Riwayat</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Formulir Pelanggan</h2>
+            
+            <form id="customer-form">
+                <div class="form-group">
+                    <label for="customer-name">Nama Pelanggan:</label>
+                    <input type="text" id="customer-name" required>
+                </div>
+                
+                <div class="actions">
+                    <button type="button" id="calculate-btn" class="btn-primary">Hitung Total</button>
+                    <button type="button" id="back-btn" class="btn-secondary">Kembali</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="../js/formulir.js"></script>
+</body>
+</html>
